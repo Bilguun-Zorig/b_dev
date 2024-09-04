@@ -1,0 +1,55 @@
+
+
+.profileContainer{
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        
+    }
+    
+    li a {
+        text-decoration: none;
+        position: relative;
+        color: black;
+        color: var(--text-color);
+        margin-left: 25px;
+    }
+    
+    li a::after {
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 1px;
+        width: 0;
+        left: 0;
+        bottom: -3px;
+        transition: 0.2s;
+        background-color: var(--text-color);
+    }
+    
+    li a:hover::after {
+        width: 100%;
+    }
+    
+    h5 {
+        cursor: pointer;
+        color: var(--text-color);
+    }
+
+}
+
+
+
+#desktop-nav {
+    display: flex; 
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+    section{
+        display: none;
+    }
+}
+
+
